@@ -1,0 +1,44 @@
+note -- everything is in django!
+1. Create similarity score. 
+    a.) Test google gemini comparison score -it's shit btw 
+    b.) Make a mock algo that takes in similarity score + other factors and returns a final score - done in tandem w/altern. database w/chromadb? 
+2. Interface with database service. -half done?
+    a.) could be chroma, simplestoredb, etc -atm sqlite, which is default for django
+    b.) be able to query data as well as write to the database easily. DONE - W/SQL LITE DATABASE CURRENTLY, NEED TO ADD PARAMS 
+3. Interface with externally facing app through requests. -DONE
+    a.) have some sort of dummy obj that you r/w requests into. - DONE - django does this by default given it's tech. a fs platform
+    b.) create new apis to be called from. -DONE
+
+just a brief recap on how to do so -- link it up in the urls page, define a serializer -> json,
+and define the API itself in the models pane. this is auto written into an SQL Lite database, 
+& you can POST/GET pretty easily from the result. for more info just google it i guess
+
+Work on visual presentation of data in the final prez
+    - how should we present our project? --> what kinds of examples are we showing
+    - we need to figure out how to make our project appeal more too
+    - need to explain we picked the sources to use (e.g., we chose chroma because not only is it an efficient database, it can also perform full-text searches)
+
+Frontend To-Do list --
+start it fam 
+
+- general format of the frontend! 
+
+start: are you hosting or are you studying? 
+
+then, both are greeted with questions regarding study preferences. 
+
+hosts are inserted into the database and left alone.
+
+finders are given a host match, the host entry for remainingNum and currentNum is modified, and 
+the finders are set off towards the location that is matched to them. 
+
+
+Realistically, we have four screens (from what i count?)
+
+Entry screen - r u a host or a finder? + a cute logo 
+
+Matching Preferences screen - what do u like? 
+
+Here's your match screen! - exclusive to "finders" --> communicate that to db/django
+
+enter study location screen -- where hosts can enter where they're pulling up -- communicate that/prior to django
