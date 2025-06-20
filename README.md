@@ -1,0 +1,1 @@
+As UC Berkeley students, our days are not complete without studying for upcoming quizzes, midterms, or finals. We also do not enjoy just studying by ourselves all the time, so this tool helps us find study groups while optimizing individual preferences :)
